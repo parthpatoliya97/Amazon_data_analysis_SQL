@@ -57,6 +57,7 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 - category_id: Unique ID for each category.
 
 - category_name: Name of the category.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Seller Table :-
 
@@ -67,6 +68,7 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 - seller_name: Name of the seller.
 
 - origin: Seller’s location (e.g., USA, India).
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Products Table :-
 
@@ -81,6 +83,7 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 - cogs: Cost of Goods Sold (helps calculate profit margins).
 
 - category_id: Linked to Category table to classify products.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Customers Table :-
 
@@ -91,6 +94,7 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 - first_name / last_name: Customer details.
 
 - state: Customer’s state/region (useful for regional sales insights).
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Orders Table :-
 
@@ -105,6 +109,7 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 - seller_id: Linked to Seller table.
 
 - order_status: Status of order (e.g., Completed, Cancelled, Pending).
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Order_Items Table :-
 
@@ -121,7 +126,7 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 - price_per_unit: Price of one unit at purchase time.
 
 - total_price: Final amount for that item (quantity × price_per_unit).
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Payments Table :-
 
 - Tracks how customers paid for their orders.
@@ -135,7 +140,7 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 - payment_mode: Mode of payment (e.g., Credit Card, UPI, Net Banking).
 
 - payment_status: Status (e.g., Success, Failed, Pending).
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Shipping Table :-
 
 - Records shipping details of orders once payment is processed.
@@ -149,7 +154,7 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 - shipping_provider: Courier partner (e.g., FedEx, Amazon Logistics).
 
 - delivery_status: Status (Delivered, In Transit, Returned).
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Inventory Table :-
 
 - inventory_id: Unique ID for stock record.
@@ -161,7 +166,7 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 - warehouse_id: ID of warehouse storing the product.
 
 - last_stock_date: Last updated date of stock.
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### In short:
 
 - Master Data: category, products, customers, seller
