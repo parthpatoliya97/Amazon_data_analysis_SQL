@@ -2,9 +2,6 @@
 ## SQL Project - Amazon Sales Analysis
 ![amazon_logo](https://www.amalytix.com/blog/amazon_ai_features_cover.jpg)
 
-### ER Diagram :-
-![ER_Diagram](https://github.com/parthpatoliya97/Amazon_data_analysis_SQL/blob/main/ER-Diagram.png?raw=true)
-
 - This project analyzes Amazon sales data from 2021 to 2024 to extract valuable business insights.
 The aim of this project is to showcase end-to-end SQL skills — from database design and querying, to advanced concepts like window functions, stored procedures, and CTEs.
 
@@ -49,6 +46,149 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 - Stored Procedures for automating sales & inventory updates
 
 - Pivoting data for reports
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### ER Diagram :-
+![ER_Diagram](https://github.com/parthpatoliya97/Amazon_data_analysis_SQL/blob/main/ER-Diagram.png?raw=true)
+
+#### Category Table :-
+
+- Stores product categories to classify items into groups (e.g., Electronics, Fashion, Home Appliances).
+
+#### Key Columns:-
+
+- category_id: Unique ID for each category.
+
+- category_name: Name of the category.
+
+#### Seller Table :-
+
+- Maintains details of sellers/vendors who list products on the platform.
+
+#### Key Columns:
+
+- seller_id: Unique ID for each seller.
+
+- seller_name: Name of the seller.
+
+- origin: Seller’s location (e.g., USA, India).
+
+#### Products Table
+
+- Contains all available products along with their financial details.
+
+#### Key Columns:
+
+- product_id: Unique ID for each product.
+
+- product_name: Name/description of the product.
+
+- price: Selling price.
+
+- cogs: Cost of Goods Sold (helps calculate profit margins).
+
+- category_id: Linked to Category table to classify products.
+
+#### Customers Table
+
+- Stores customer information for order management and analysis.
+
+#### Key Columns:
+
+- customer_id: Unique ID for each customer.
+
+- first_name / last_name: Customer details.
+
+- state: Customer’s state/region (useful for regional sales insights).
+
+#### Orders Table
+
+- Represents customer purchases (main transaction table).
+
+#### Key Columns:
+
+- order_id: Unique ID for each order.
+
+- order_date: Date when the order was placed.
+
+- customer_id: Linked to Customers table.
+
+- seller_id: Linked to Seller table.
+
+- order_status: Status of order (e.g., Completed, Cancelled, Pending).
+
+#### Order_Items Table
+
+- Breaks down each order into the specific items purchased.
+
+#### Key Columns:
+
+- order_item_id: Unique ID for each order item.
+
+- order_id: Linked to Orders table.
+
+- product_id: Linked to Products table.
+
+- quantity: Number of units ordered.
+
+- price_per_unit: Price of one unit at purchase time.
+
+- total_price: Final amount for that item (quantity × price_per_unit).
+
+#### Payments Table
+
+- Tracks how customers paid for their orders.
+
+#### Key Columns:
+
+- payment_id: Unique ID for payment.
+
+- order_id: Linked to Orders table.
+
+- payment_date: Date when payment was made.
+
+- payment_mode: Mode of payment (e.g., Credit Card, UPI, Net Banking).
+
+- payment_status: Status (e.g., Success, Failed, Pending).
+
+#### Shipping Table
+
+- Records shipping details of orders once payment is processed.
+
+#### Key Columns:
+
+- shipping_id: Unique ID for shipping record.
+
+- order_id: Linked to Orders table.
+
+- shipping_date: Date product was shipped.
+
+- shipping_provider: Courier partner (e.g., FedEx, Amazon Logistics).
+
+- delivery_status: Status (Delivered, In Transit, Returned).
+
+#### Inventory Table
+
+- Tracks stock availability across warehouses.
+
+#### Key Columns:
+
+- inventory_id: Unique ID for stock record.
+
+- product_id: Linked to Products table.
+
+- stock: Current stock quantity available.
+
+- warehouse_id: ID of warehouse storing the product.
+
+- last_stock_date: Last updated date of stock.
+
+#### In short:
+
+- Master Data: category, products, customers, seller
+
+- Transactional Data: orders, order_items
+
+- Operational Data: payments, shipping, inventory
 
 #### 1. List all customers from California.
 ```sql
