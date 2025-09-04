@@ -5,6 +5,52 @@
 ### ER Diagram :-
 ![ER_Diagram](https://github.com/parthpatoliya97/Amazon_data_analysis_SQL/blob/main/ER-Diagram.png?raw=true)
 
+-This project analyzes Amazon sales data from 2021 to 2024 to extract valuable business insights.
+The aim of this project is to showcase end-to-end SQL skills — from database design and querying, to advanced concepts like window functions, stored procedures, and CTEs.
+
+- The project uses sample data generated with Python’s Faker library to simulate real-world Amazon transactions.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#### Tech Stack :-
+
+- Database: MySQL
+
+- Data Generation: Python (Faker library)
+
+- Tools: MySQL Workbench, VS Code, GitHub, dbdiagram.io
+
+#### Concepts Covered
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#### Beginner Concepts :-
+
+- Database creation & table design
+
+- Data retrieval & filtering (SELECT, WHERE)
+
+- Aggregations (GROUP BY, HAVING, SUM, COUNT)
+
+- Multi-table JOINs
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#### Intermediate Concepts :-
+
+- Conditional logic (CASE WHEN, IF ELSE)
+
+- Date functions (YEAR, MONTH, QUARTER, DATEDIFF, DAYNAME, YEARWEEK)
+
+- Generating synthetic sales data with Python Faker
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#### Advanced Concepts :-
+
+- Window functions (RANK, DENSE_RANK, ROW_NUMBER / LEAD, LAG for growth trends)
+
+- Common Table Expressions (CTEs, Recursive CTEs)
+
+- Stored Procedures for automating sales & inventory updates
+
+- Pivoting data for reports
+
 #### 1. List all customers from California.
 ```sql
 SELECT * 
