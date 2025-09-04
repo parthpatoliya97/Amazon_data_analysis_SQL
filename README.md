@@ -2,19 +2,8 @@
 ## SQL Project - Amazon Sales Analysis
 ![amazon_logo](https://www.amalytix.com/blog/amazon_ai_features_cover.jpg)
 
-- This prject is based on Amazon sales which are happend in the 2021,2022,2023,2024 
-- Derived valuable insights from the data by using various SQL concepts
-- Also this project covers all the SQL concepts from basics to advanced stuff
-
-#### Concepts Covered Through This Project:-
-- Creation of the DATABASE and TABLEs 
-- Generate data using the Python Faker Library for sample data
-- JOINS with multiple tables
-- Grouping and Aggregation (GROUP BY,HAVING,WHERE)
-- DATE Functions (YEAR,MONTH,QUARTER,DATEDIFF,DAYNAME,YEARWEEK)
-- Window Functions (LEAD,LAG,RANK,DENSE_RANK,ROW_NUMBER)
-- CTE,RECURSIVE CTEs
-- Store-Procedure
+### ER Diagram :-
+![ER_Diagram](https://github.com/parthpatoliya97/Amazon_data_analysis_SQL/blob/main/ER-Diagram.png?raw=true)
 
 #### 1. List all customers from California.
 ```sql
