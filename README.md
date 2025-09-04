@@ -5,13 +5,13 @@
 ### ER Diagram :-
 ![ER_Diagram](https://github.com/parthpatoliya97/Amazon_data_analysis_SQL/blob/main/ER-Diagram.png?raw=true)
 
--This project analyzes Amazon sales data from 2021 to 2024 to extract valuable business insights.
+- This project analyzes Amazon sales data from 2021 to 2024 to extract valuable business insights.
 The aim of this project is to showcase end-to-end SQL skills — from database design and querying, to advanced concepts like window functions, stored procedures, and CTEs.
 
 - The project uses sample data generated with Python’s Faker library to simulate real-world Amazon transactions.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#### Tech Stack :-
+### Tech Stack :-
 
 - Database: MySQL
 
@@ -19,7 +19,6 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 
 - Tools: MySQL Workbench, VS Code, GitHub, dbdiagram.io
 
-#### Concepts Covered
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Beginner Concepts :-
 
