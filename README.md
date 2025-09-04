@@ -54,8 +54,6 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 
 - Stores product categories to classify items into groups (e.g., Electronics, Fashion, Home Appliances).
 
-#### Key Columns:-
-
 - category_id: Unique ID for each category.
 
 - category_name: Name of the category.
@@ -64,19 +62,15 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 
 - Maintains details of sellers/vendors who list products on the platform.
 
-#### Key Columns:
-
 - seller_id: Unique ID for each seller.
 
 - seller_name: Name of the seller.
 
 - origin: Seller’s location (e.g., USA, India).
 
-#### Products Table
+#### Products Table :-
 
 - Contains all available products along with their financial details.
-
-#### Key Columns:
 
 - product_id: Unique ID for each product.
 
@@ -88,11 +82,9 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 
 - category_id: Linked to Category table to classify products.
 
-#### Customers Table
+#### Customers Table :-
 
 - Stores customer information for order management and analysis.
-
-#### Key Columns:
 
 - customer_id: Unique ID for each customer.
 
@@ -100,12 +92,10 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 
 - state: Customer’s state/region (useful for regional sales insights).
 
-#### Orders Table
+#### Orders Table :-
 
 - Represents customer purchases (main transaction table).
-
-#### Key Columns:
-
+- 
 - order_id: Unique ID for each order.
 
 - order_date: Date when the order was placed.
@@ -116,11 +106,9 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 
 - order_status: Status of order (e.g., Completed, Cancelled, Pending).
 
-#### Order_Items Table
+#### Order_Items Table :-
 
 - Breaks down each order into the specific items purchased.
-
-#### Key Columns:
 
 - order_item_id: Unique ID for each order item.
 
@@ -134,11 +122,9 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 
 - total_price: Final amount for that item (quantity × price_per_unit).
 
-#### Payments Table
+#### Payments Table :-
 
 - Tracks how customers paid for their orders.
-
-#### Key Columns:
 
 - payment_id: Unique ID for payment.
 
@@ -150,11 +136,9 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 
 - payment_status: Status (e.g., Success, Failed, Pending).
 
-#### Shipping Table
+#### Shipping Table :-
 
 - Records shipping details of orders once payment is processed.
-
-#### Key Columns:
 
 - shipping_id: Unique ID for shipping record.
 
@@ -166,11 +150,7 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 
 - delivery_status: Status (Delivered, In Transit, Returned).
 
-#### Inventory Table
-
-- Tracks stock availability across warehouses.
-
-#### Key Columns:
+#### Inventory Table :-
 
 - inventory_id: Unique ID for stock record.
 
