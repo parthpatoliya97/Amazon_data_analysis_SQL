@@ -52,16 +52,12 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 
 #### Category Table :-
 
-- Stores product categories to classify items into groups (e.g., Electronics, Fashion, Home Appliances).
-
 - category_id: Unique ID for each category.
 
 - category_name: Name of the category.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Seller Table :-
-
-- Maintains details of sellers/vendors who list products on the platform.
 
 - seller_id: Unique ID for each seller.
 
@@ -71,8 +67,6 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Products Table :-
-
-- Contains all available products along with their financial details.
 
 - product_id: Unique ID for each product.
 
@@ -87,8 +81,6 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 
 #### Customers Table :-
 
-- Stores customer information for order management and analysis.
-
 - customer_id: Unique ID for each customer.
 
 - first_name / last_name: Customer details.
@@ -98,8 +90,6 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 
 #### Orders Table :-
 
-- Represents customer purchases (main transaction table).
-- 
 - order_id: Unique ID for each order.
 
 - order_date: Date when the order was placed.
@@ -112,8 +102,6 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Order_Items Table :-
-
-- Breaks down each order into the specific items purchased.
 
 - order_item_id: Unique ID for each order item.
 
@@ -129,8 +117,6 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Payments Table :-
 
-- Tracks how customers paid for their orders.
-
 - payment_id: Unique ID for payment.
 
 - order_id: Linked to Orders table.
@@ -142,8 +128,6 @@ The aim of this project is to showcase end-to-end SQL skills — from database d
 - payment_status: Status (e.g., Success, Failed, Pending).
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Shipping Table :-
-
-- Records shipping details of orders once payment is processed.
 
 - shipping_id: Unique ID for shipping record.
 
